@@ -69,35 +69,7 @@ export function Home({ data, setSGame, selectedGame, setShowModal, currentHouse,
 
     return (
         <>
-            {location.pathname === "/verberat" && (
-                <section className='hSection'>
-                    <div className="miniSectionTitle marginSpacings">
-                    </div>
-                    <Swiper
-                        slidesPerView={'auto'}
-                        centeredSlides={false}
-                        spaceBetween={16}
-                        className="mySwiper"
-                        onSwiper={(swiper) => setHouseSwiper(swiper)}
-                    >
-                        {dataState.map((current, index) => (
-                            <SwiperSlide key={index}>
-                                <div onClick={() => handleSliderItemClick(index)} className='HouseCardHidden'>
-                                    <HouseCard
-                                        data={current }
-                                        setShowModal={setShowModal}
-                                        currentHouse={currentHouse}
-                                        setCurrentHouse={setCurrentHouse}
-                                        vipAccess={vipAccess}
-                                        setCurrentSupplier={setCurrentSupplier}
-                                        currentSupplier={currentSupplier}
-                                    />
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </section>
-            )}
+
 
             {location.pathname === "/" && (
                 <section className='hSection'>
