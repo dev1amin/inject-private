@@ -40,3 +40,6 @@
     transform: scale(0.93);
 }
 
+.HouseCardHidden{
+    display: none;
+}
