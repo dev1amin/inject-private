@@ -82,7 +82,7 @@ export function Home({ data, setSGame, selectedGame, setShowModal, currentHouse,
                     >
                         {dataState.map((current, index) => (
                             <SwiperSlide key={index}>
-                                <div onClick={() => handleSliderItemClick(index)} className='HouseCardHidden'>
+                                <div onClick={() => handleSliderItemClick(index)} className='HouseCardHidden2'>
                                     <HouseCard
                                         data={current }
                                         setShowModal={setShowModal}
